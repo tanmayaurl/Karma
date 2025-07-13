@@ -68,5 +68,4 @@ When you first open the application, you'll see some sample tasks to help you ge
 
 
 **Preview**
-<img width="1917" height="904" alt="Screenshot 2025-07-13 204531" src="https://github.com/user-attachments/assets/403df491-3bbb-498a-abcf-0ed53a16fb42" />
-
+<img width="1898" height="905" alt="Screenshot 2025-07-13 204952" src="https://github.com/user-attachments/assets/37f91bb2-3a92-4166-bd8c-8112fc342555" />
