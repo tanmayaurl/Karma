@@ -65,6 +65,8 @@ When you first open the application, you'll see some sample tasks to help you ge
 ---
 
 **Organize your day, one task at a time with Karma!** ✨
+
+
 **Preview**
 <img width="1917" height="904" alt="Screenshot 2025-07-13 204531" src="https://github.com/user-attachments/assets/403df491-3bbb-498a-abcf-0ed53a16fb42" />
 
