@@ -5,8 +5,8 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
+    background: linear-gradient(135deg, #FFE156 0%, #FFD6A5 100%);
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -15,19 +15,21 @@ body {
 }
 
 .container {
-    background: white;
-    border-radius: 20px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    background: #fffbe7;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(58, 134, 255, 0.10);
     width: 100%;
     max-width: 600px;
     overflow: hidden;
+    border: 4px dashed #3A86FF;
 }
 
 .header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: linear-gradient(135deg, #FFE156 0%, #FFD6A5 100%);
+    color: #FF6F61;
     padding: 30px;
     text-align: center;
+    border-bottom: 4px solid #3A86FF;
 }
 
 .header h1 {
@@ -37,15 +39,21 @@ body {
     align-items: center;
     justify-content: center;
     gap: 15px;
+    font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
+    letter-spacing: 2px;
 }
 
 .header h1 i {
-    font-size: 2rem;
+    font-size: 2.2rem;
+    color: #3A86FF;
+    filter: drop-shadow(1px 2px 0 #FFD6A5);
 }
 
 .header p {
     font-size: 1.1rem;
     opacity: 0.9;
+    color: #222;
+    font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
 }
 
 .todo-container {
@@ -61,39 +69,46 @@ body {
 #taskInput {
     flex: 1;
     padding: 15px 20px;
-    border: 2px solid #e1e5e9;
-    border-radius: 10px;
+    border: 3px solid #3A86FF;
+    border-radius: 15px;
     font-size: 1rem;
     transition: all 0.3s ease;
     outline: none;
+    background: #FFD6A5;
+    color: #222;
+    font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
 }
 
 #taskInput:focus {
-    border-color: #667eea;
-    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    border-color: #FF6F61;
+    box-shadow: 0 0 0 3px rgba(255, 111, 97, 0.15);
 }
 
 .add-btn {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    border: none;
+    background: linear-gradient(135deg, #3A86FF 0%, #FF6F61 100%);
+    color: #fffbe7;
+    border: 3px solid #FFD6A5;
     padding: 15px 25px;
-    border-radius: 10px;
+    border-radius: 15px;
     font-size: 1rem;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
     display: flex;
     align-items: center;
     gap: 8px;
+    font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
+    box-shadow: 0 2px 8px rgba(58, 134, 255, 0.10);
 }
 
 .add-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+    background: linear-gradient(135deg, #FF6F61 0%, #3A86FF 100%);
+    color: #FFE156;
+    border-color: #3A86FF;
+    transform: scale(1.05) rotate(-2deg);
 }
 
 .add-btn:active {
-    transform: translateY(0);
+    transform: scale(0.98) rotate(1deg);
 }
 
 .filters {
@@ -104,23 +119,28 @@ body {
 }
 
 .filter-btn {
-    background: #f8f9fa;
-    border: 2px solid #e1e5e9;
+    background: #FFD6A5;
+    border: 2px solid #3A86FF;
     padding: 10px 20px;
-    border-radius: 25px;
+    border-radius: 20px;
     cursor: pointer;
-    transition: all 0.3s ease;
-    font-size: 0.9rem;
+    transition: all 0.2s ease;
+    font-size: 0.95rem;
+    color: #222;
+    font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
+    box-shadow: 0 1px 4px rgba(255, 97, 97, 0.08);
 }
 
 .filter-btn:hover {
-    background: #e9ecef;
+    background: #FFE156;
+    color: #FF6F61;
+    border-color: #FF6F61;
 }
 
 .filter-btn.active {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    border-color: #667eea;
+    background: #3A86FF;
+    color: #fffbe7;
+    border-color: #FF6F61;
 }
 
 .stats {
@@ -129,25 +149,28 @@ body {
     align-items: center;
     margin-bottom: 20px;
     padding: 15px 0;
-    border-bottom: 1px solid #e1e5e9;
+    border-bottom: 2px dashed #3A86FF;
 }
 
 #taskCount {
-    color: #6c757d;
-    font-size: 0.9rem;
+    color: #3A86FF;
+    font-size: 1rem;
+    font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
 }
 
 .clear-btn {
     background: none;
     border: none;
-    color: #dc3545;
+    color: #FF6F61;
     cursor: pointer;
-    font-size: 0.9rem;
-    transition: color 0.3s ease;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+    font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
 }
 
 .clear-btn:hover {
-    color: #c82333;
+    color: #3A86FF;
+    text-decoration: underline wavy #FFD6A5;
 }
 
 .task-list {
@@ -156,54 +179,62 @@ body {
 }
 
 .task-item {
-    background: #f8f9fa;
-    border-radius: 10px;
+    background: #FFE156;
+    border-radius: 15px;
     padding: 15px 20px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     display: flex;
     align-items: center;
     gap: 15px;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
     animation: slideIn 0.3s ease;
+    border: 2.5px solid #3A86FF;
+    box-shadow: 0 2px 8px rgba(255, 111, 97, 0.10);
+    font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
 }
 
 .task-item:hover {
-    background: #e9ecef;
-    transform: translateX(5px);
+    background: #FFD6A5;
+    border-color: #FF6F61;
+    transform: translateX(7px) rotate(-1deg) scale(1.03);
 }
 
 .task-item.completed {
-    background: #d4edda;
+    background: #FFD6A5;
     opacity: 0.7;
+    border-style: dotted;
 }
 
 .task-item.completed .task-text {
-    text-decoration: line-through;
-    color: #6c757d;
+    text-decoration: line-through wavy #FF6F61;
+    color: #3A86FF;
 }
 
 .task-checkbox {
-    width: 20px;
-    height: 20px;
-    border: 2px solid #667eea;
+    width: 24px;
+    height: 24px;
+    border: 3px solid #3A86FF;
     border-radius: 50%;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
     flex-shrink: 0;
+    background: #fffbe7;
+    box-shadow: 0 1px 4px rgba(58, 134, 255, 0.10);
 }
 
 .task-checkbox.checked {
-    background: #667eea;
-    color: white;
+    background: #FF6F61;
+    color: #fffbe7;
+    border-color: #FFD6A5;
 }
 
 .task-checkbox i {
-    font-size: 12px;
+    font-size: 14px;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.2s ease;
 }
 
 .task-checkbox.checked i {
@@ -212,16 +243,17 @@ body {
 
 .task-text {
     flex: 1;
-    font-size: 1rem;
-    color: #333;
+    font-size: 1.05rem;
+    color: #222;
     word-break: break-word;
+    font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
 }
 
 .task-actions {
     display: flex;
     gap: 10px;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.2s ease;
 }
 
 .task-item:hover .task-actions {
@@ -229,49 +261,59 @@ body {
 }
 
 .action-btn {
-    background: none;
-    border: none;
+    background: #FFD6A5;
+    border: 2px solid #3A86FF;
     cursor: pointer;
-    padding: 5px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
+    padding: 5px 7px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
 }
 
 .edit-btn {
-    color: #ffc107;
+    color: #3A86FF;
 }
 
 .edit-btn:hover {
-    background: #fff3cd;
+    background: #3A86FF;
+    color: #fffbe7;
+    border-color: #FF6F61;
 }
 
 .delete-btn {
-    color: #dc3545;
+    color: #FF6F61;
 }
 
 .delete-btn:hover {
-    background: #f8d7da;
+    background: #FF6F61;
+    color: #fffbe7;
+    border-color: #3A86FF;
 }
 
 .empty-state {
     text-align: center;
     padding: 40px 20px;
-    color: #6c757d;
+    color: #3A86FF;
+    font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
 }
 
 .empty-state i {
     font-size: 4rem;
     margin-bottom: 20px;
-    opacity: 0.5;
+    opacity: 0.7;
+    color: #FF6F61;
+    filter: drop-shadow(1px 2px 0 #FFD6A5);
 }
 
 .empty-state h3 {
     margin-bottom: 10px;
     font-size: 1.5rem;
+    color: #FF6F61;
 }
 
 .empty-state p {
     font-size: 1rem;
+    color: #222;
 }
 
 @keyframes slideIn {
@@ -304,7 +346,7 @@ body {
 @media (max-width: 768px) {
     .container {
         margin: 10px;
-        border-radius: 15px;
+        border-radius: 20px;
     }
     
     .header {
