@@ -441,6 +441,39 @@ body::before {
     animation: fadeOut 0.3s ease forwards;
 }
 
+.shinchan-peek {
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+    z-index: 10;
+    display: none;
+    pointer-events: none;
+    animation: shinchan-peek-in 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.shinchan-peek.show {
+    display: block !important;
+    animation: shinchan-peek-in 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+@keyframes shinchan-peek-in {
+    0% {
+        opacity: 0;
+        transform: translateY(60px) scale(0.7) rotate(10deg);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(-10px) scale(1.05) rotate(-5deg);
+    }
+    80% {
+        transform: translateY(0px) scale(1.02) rotate(2deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1) rotate(0deg);
+    }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {

@@ -62,6 +62,9 @@ class TodoList {
             this.saveTasks();
             this.renderTasks();
             this.updateStats();
+            if (task.completed) {
+                this.showShinchanPeek();
+            }
         }
     }
 
@@ -238,6 +241,18 @@ class TodoList {
         const div = document.createElement('div');
         div.textContent = text;
         return div.innerHTML;
+    }
+
+    showShinchanPeek() {
+        const peek = document.getElementById('shinchan-peek');
+        if (!peek) return;
+        if (peek.classList.contains('show')) return; // already showing
+        peek.classList.add('show');
+        peek.style.display = 'block';
+        setTimeout(() => {
+            peek.classList.remove('show');
+            peek.style.display = 'none';
+        }, 2000);
     }
 }
 
