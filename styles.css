@@ -474,6 +474,18 @@ body::before {
     }
 }
 
+.shinchan-peek-img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+    border: 3px solid #FFD6A5;
+    background: #fffbe7;
+    position: relative;
+    z-index: 11;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
